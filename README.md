@@ -1,6 +1,6 @@
 
 
-| **Endpoint(http://127.0.0.1:8000/)**                             | **Request** | **Definition**                                    | **Authentication** | **Permission**  | **In data**                                                                     |
+| **Endpoint**                             | **Request** | **Definition**                                    | **Authentication** | **Permission**  | **In data**                                                                     |
 |------------------------------------------|-------------|---------------------------------------------------|--------------------|-----------------|---------------------------------------------------------------------------------|
 | auth/token         | POST        | Return an access and refresh JSON web token pair. | -                  | -               | Required: [username, password]                                                  |
 | auth/token/refresh | POST        | Return an access type JSON web token.             | -                  | -               | Required: [refresh]                                                             |
