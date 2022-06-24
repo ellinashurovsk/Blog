@@ -18,4 +18,4 @@
 | http://127.0.0.1:8000/post/<slug:slug>   | PUT         | Update a post by it's slug.                       | JWTAuthentication  | IsAuthenticated | Required: [title, body]                                                         |
 | http://127.0.0.1:8000/post/<slug:slug>   | PATCH       | Update a post by it's slug.                       | JWTAuthentication  | IsAuthenticated | Optional: [title, body]                                                         |
 | http://127.0.0.1:8000/post/<slug:slug>   | DELETE      | Delete a post by it's slug.                       | JWTAuthentication  | IsAuthenticated |                                                                                 |
-|------------------------------------------|-------------|---------------------------------------------------|--------------------|-----------------|---------------------------------------------------------------------------------|
+
