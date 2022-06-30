@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import AllPosts, CreatePost, SinglePost
+from .views import PostsAPIList, PostAPICreate, PostAPIReadUpdateDelete
 
 urlpatterns = [
-    path('', AllPosts.as_view()),
-    path('create', CreatePost.as_view()),
-    path('<slug:slug>', SinglePost.as_view()),
+    path('', PostsAPIList.as_view()),
+    path('create', PostAPICreate.as_view()),
+    path('<slug:slug>', PostAPIReadUpdateDelete.as_view()),
 ]

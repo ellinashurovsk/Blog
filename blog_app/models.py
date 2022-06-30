@@ -7,13 +7,13 @@ class Post(models.Model):
     title = models.CharField(max_length=255, verbose_name='Title')
     slug = models.SlugField(max_length=255, unique=True,
                             db_index=True, verbose_name='Slug')
-    owner = models.ForeignKey(
-        User, on_delete=models.CASCADE, verbose_name='Owner')
     body = models.TextField(verbose_name='Content')
     date_added = models.DateTimeField(
         auto_now_add=True, verbose_name='Date added')
     date_updated = models.DateTimeField(
         auto_now=True, verbose_name='Date updated')
+    owner = models.ForeignKey(
+        User, related_name='posts', on_delete=models.CASCADE, verbose_name='Owner')
 
     def __str__(self):
         """Return a string representation of the model."""
